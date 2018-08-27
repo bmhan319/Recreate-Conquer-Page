@@ -1,0 +1,99 @@
+/*----- 4-Column Sub-Section -----*/
+
+.services {
+  margin: 60px 0 60px 0;
+}
+
+.services-container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.services-row1 {
+  display: inline-flex;
+  padding: 0 0 30px 0;
+}
+
+.services-row1-col { 
+  width: 260px;
+  height: 500px;
+  background-color: #f2f2f2;
+}
+
+.services-row1-col1, .services-row1-col2, .services-row1-col3 {
+  margin: 0 33.333px 0 0;
+}
+
+.services-hl {
+  text-align: center;
+  color: #666;
+}
+
+.services-text {
+  padding: 7px 22px 11px 22px;
+  font-weight: 400;
+  font-size: .85rem;
+  line-height: 22px;
+}
+
+.services-row1c {
+  text-align: center;
+}
+
+.services-white-button {
+  width: 122px;
+  height: 46px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: #666;
+  transition: all .5s ease 0s; 
+}
+
+.services-white-button:hover {
+  background-color: #e6e6e6;
+  color: #376085;
+}
+
+/*----- End 4-Column Sub-Section -----*/
+/*----- 1-Column Sub-Section -----*/
+
+.services-row2-col { 
+  width: 1140px;
+  height: 780px;
+  background-color: #f2f2f2;
+}
+
+.services-row2b {
+  padding: 30px 25px 0 25px;
+}
+
+.services-hl2 {
+  color: #666;
+  margin: 16px 0 10px 0;
+}
+
+.services-text2 {
+  margin: 5px  0 0 0;
+  padding: 0px 0 5px 0;
+  font-weight: 400;
+  font-size: .85rem;
+  line-height: 22px;
+}
+
+.services-white-button2 {
+  float: left;
+  margin: 20px 0 0 25px;
+  width: 156px;
+  height: 46px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: #666;
+  transition: all .5s ease 0s; 
+}
+
+.services-white-button3:hover {
+  background-color: #e6e6e6;
+  color: #376085;
+}
+
+/*----- End 1-Column Sub-Section -----*/
