@@ -1,0 +1,27 @@
+  
+.tail {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #e6e6e6;
+}
+
+.tail-row1 {
+  margin: 38px auto 48px auto;
+  width: 50%;
+  text-align: center;
+}
+
+.tail-hl {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.85rem;
+  color: #666;
+}
+
+.tail-p {
+  font-style: italic;
+  font-weight: 400;
+  font-size: .85rem;
+  color: #a0a0a0;
+  line-height: 22px;
+}
