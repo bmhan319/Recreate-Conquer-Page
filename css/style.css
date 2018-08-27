@@ -1,0 +1,20 @@
+@font-face {
+font-family: "glyphicons-halflings";
+src: url("../fonts/glyphicons-halflings-regular.eot");
+src: 
+  url("css/fonts/glyphicons-halflings-regular.woff") format("woff"),
+  url("css/fonts/glyphicons-halflings-regular.otf") format("opentype"),
+  url("css/fonts/glyphicons-halflings-regular.svg#filename") format("svg");
+}
+
+body,html{
+  margin:0;padding:0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif!important;
+}
+
+.anchor {
+  display: block;
+  height: 78px; /*same height as header*/
+  margin-top: -78px; /*same height as header*/
+  visibility: hidden;
+}
