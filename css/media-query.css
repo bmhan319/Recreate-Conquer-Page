@@ -1,0 +1,380 @@
+/*----- Start 1200px Media Query Section -----*/
+@media screen and (max-width: 1200px) {
+  
+/*----- 3-Column Sub-Section -----*/
+  .content-container {
+    max-width: 940px;
+  }
+
+  .content-row1-col1, .content-row1-col2 {
+    margin: 0 30px 0 0;
+  }
+
+  .content-row1b {
+    padding: 0 22px;
+  }
+
+/*----- End 3-Column Sub-Section -----*/
+/*----- 2-Column Sub-Section -----*/
+  
+  .content-row2-col {
+    max-width: 455px;
+  } 
+
+  .content-row2c {
+    padding: 5px 44px 0 0;
+  }
+  
+/*----- End 2-Column Sub-Section -----*/
+/*----- 4-Column Sub-Section -----*/
+  
+  .services-container {
+    max-width: 940px;
+  }
+  
+  .services-row1-col { 
+    max-width: 212px;
+  }
+
+  .services-row1-col1, .services-row1-col2, .services-row1-col3 {
+    margin: 0 31px 0 0;
+  }
+
+/*----- End 4-Column Sub-Section -----*/
+/*----- 1-Column Sub-Section -----*/
+
+  .services-row2-col { 
+    width: 942px;
+    height: 753px;
+  }
+
+  .services-row2-col1 div.services-row2b {
+    padding: 30px 55px 0 35px;
+  }
+
+  .services-row2-col {
+    padding: 0 0 0px 0;
+  }
+  
+  .services-white-button2 {
+    margin: 20px 0 0 35px;
+  }
+
+/*----- End 1-Column Sub-Section -----*/  
+/*----- Third Parallax Section -----*/
+  .bg3 {
+    height:575px;
+  }
+/*----- End Third Parallax Section -----*/
+}
+/*----- End 1200px Media Query Section -----*/
+
+
+
+
+
+
+
+
+
+
+/*----- Start 991px Media Query Section -----*/
+@media screen and (max-width: 991px) {
+
+/*----- Nav Section -----*/
+  nav {
+    height: 70px;
+    padding: 23px 0 0px 0;
+  }
+  
+  .btn {
+    padding: 13px 24px;
+    margin: 0px 4px;
+    font-size: 1.04rem;
+  }
+  
+/*----- End Nav Section -----*/  
+/*----- 3-Column Sub-Section -----*/
+  .content-container {
+    max-width: 720px;
+  }
+
+  .content-row1b {
+    padding: 0 22px;
+  }
+/*----- End 3-Column Sub-Section -----*/  
+/*----- 2-Column Sub-Section -----*/  
+
+  .content-row2-col {
+    max-width: 345px;
+  } 
+
+  .content-row2c {
+    padding: 5px 100px 0 0;
+  }
+  
+/*----- End 2-Column Sub-Section -----*/  
+/*----- 4-Column Sub-Section -----*/
+
+  .services-container {
+    /*this size determines how far apart the two columns are */
+    max-width: 720px;
+  }
+  
+  .services-row1 {
+    min-height: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 0 0;
+    padding: 0 0 0px 0px;
+  }
+
+  .services-row1 > div {
+    flex-basis: calc(50% - 70px);  
+  }
+  
+  .services-row1-col {
+    margin: 0px;
+    max-width: 260px;
+  }
+
+  .services-row1-col1, .services-row1-col2, .services-row1-col3, .services-row1-col4 {
+    margin: 0 0px 30px 0px;
+  }
+/*----- End 4-Column Sub-Section -----*/
+/*----- 1-Column Sub-Section -----*/   
+  
+  .services-row2-col1 { 
+    max-width: 720px;
+    height: 710px;
+  }
+
+  .services-white-button2 {
+    margin: 20px 0 0 35px;
+  }
+
+  /*----- End 1-Column Sub-Section -----*/  
+  /*----- Third Parallax Section -----*/
+  
+  .bg3 {
+    background-position: -115px 15px;
+    background-size:cover;
+  }
+  
+  .form-row1 {
+    padding: 3px 12px;
+  }
+  
+  .form-text {
+    font-size: 1.08rem;
+    line-height: 26px;
+    letter-spacing: .3px;
+  }
+/*----- End Third Parallax Section -----*/ 
+}
+/*----- End 991px Media Query Section -----*/
+
+
+
+/*
+@media screen and (max-width: 767px) {
+  nav {
+    background-color: transparent;
+  }
+  
+  .topnav a {
+    display: none;
+  }
+  
+  .topnav a.icon {
+    float: right;
+    display: block;
+    width: 44px;
+    height: 24px;
+    margin: -15px 14px 0 0;
+    padding: 8px 0 2px 0 ;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+  }
+
+  .bg1 {
+    height:706px;
+  }
+  
+  .txt {
+    padding: 290px 0 0 0;
+  }
+  
+
+  .container1 {
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .row1 {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    margin: 70px 0px 0px 0px;
+    padding: 0 140px 0 140px ;
+  }
+
+  .col1 {
+    width: 360px;
+  }
+
+  .col1-1, .col1-2 {
+    margin: 0 0px 30px 0;
+  }
+
+  .row1-2 {
+    text-align: center;
+    padding: 0 25px;
+  }
+  
+  .img1 {
+    width: 360px;
+  }
+  
+  .row2 {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    margin: 80px 0px 0px 0px;
+    padding: 0 42px 0 42px ;
+  }
+  
+  .col2 {
+    width: 556px;
+  } 
+  
+  .col2-1, .col2-2 {
+    margin: 0 0px 30px 0;
+  }
+  
+  .row2-2 {
+    text-align: center;
+  }
+
+  .img2 {
+    width: 556px;
+  }
+  
+  .row2-3 {
+    padding: 5px 201px 0 201px;
+    margin: -12px 0 0 0;
+  }
+ 
+  .bg2 {
+    background-attachment: fixed;
+    width:100%;
+    height:320px;
+    background-position: 0px 0px;
+    background-size:cover;
+  }
+  
+  .secondary-txt {
+    width: 94%;
+    padding: 40px 0 0 0;
+
+  }
+  
+  .sub-second-text {
+    padding: 10px 0 0 0;
+    font-size: 1.12rem;
+    line-height: 27px;
+  }
+  
+  .container2 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .row3 {
+  display: inline-flex;
+  padding: 0 0 30px 0;
+}
+
+
+  .col3 { 
+    max-width: 260px;
+  }
+  
+  .col4 {
+    max-width: 87%;
+    margin: 0 auto;
+  }
+  
+  .row1-1 {
+    max-width: 100%;
+  }
+  
+  .img4-5 {
+    max-width: 60%;
+    height: auto;
+  }
+  
+  .bg3 {
+    height: 726px;
+  }
+  
+  .contact-form {
+    width:90%;  
+  }
+  
+  .form-row1 {
+    margin: 0 auto;
+    padding: 5px 40px;
+  }
+  
+  .sub-third-text {
+    text-align: center;
+    line-height: 25px;
+    font-size: 1rem;
+  }
+  
+  .form-row2 {
+    margin: 0 10px;
+    display: block;
+  }
+
+  .form-row2-col2 {
+    width: 100%;
+  }
+  
+  .form-row2-col1 {
+    width: 100%;
+  }
+  
+  .form-input {
+    width: 97%;
+  }
+  
+  .text-area {
+  float:left;
+  width: 97%;
+  }
+  
+  .form-row3-col1 {
+    float: left;
+    padding: 13px 0px 0 10px;
+  }
+  
+  .row5 {
+    margin: 38px auto 48px auto;
+    width: 70%;
+    text-align: center;
+  }
+  
+  .tail-p {
+    font-style: italic;
+    font-weight: 400;
+    font-size: .85rem;
+    color: #a0a0a0;
+    line-height: 22px;
+  }
+  */
+}
