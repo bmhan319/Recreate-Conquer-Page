@@ -1,3 +1,4 @@
+//Added JQuery for smooth scroll when selecting nav item
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -26,7 +27,7 @@ $(document).ready(function(){
 
 
 
-// Add active class to the current button (highlight it)
+// Add active highlight to the current button
 var header = document.getElementById("navbar");
 var btns = header.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
@@ -40,26 +41,27 @@ for (var i = 0; i < btns.length; i++) {
 
 
 function myFunction() {
-    var x = document.getElementById("navbar");
-    if (x.className === "topnav") {
-        x.className += " responsive";
+    var navigation = document.getElementById("navbar");
+    if (navigation.className === "topnav") {
+        navigation.className += " responsive";
     } else {
-        x.className = "topnav";
+        navigation.className = "topnav";
     }
 }
 
 
 //Top Button 
-//Top Button appears on scroll
-
-
+//Top Button appears on scroll down
 document.getElementById('top').onscroll = function() {
   if ($(document).scrollTop() >= 300) {
     $('#top-button').stop().animate({opacity:1}, 500, 'linear');
+  
+  //Top Button disappears on scroll up
   } else if ($(document).scrollTop() < 300) {
     $('#top-button').stop().animate({opacity:0}, 500, 'linear');
   } 
   
+  //Top Button moves position when scrollbar gets to the bottom
   var element = document.getElementById("top-button");
   if ($(document).scrollTop() >= 3490) {
     element.classList.remove("top-button");
@@ -84,5 +86,5 @@ document.getElementById('top').onscroll = function() {
   }
 };
 */
-//Top Button moves position when scrollbar gets to the bottom
+
 
