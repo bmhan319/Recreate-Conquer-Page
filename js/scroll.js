@@ -58,8 +58,21 @@ document.getElementById('top').onscroll = function() {
     $('#top-button').stop().animate({opacity:1}, 500, 'linear');
   } else if ($(document).scrollTop() < 300) {
     $('#top-button').stop().animate({opacity:0}, 500, 'linear');
+  } 
+  
+  var element = document.getElementById("top-button");
+  if ($(document).scrollTop() >= 3490) {
+    element.classList.remove("top-button");
+    element.classList.add("top-button-moved");
+  } else if ($(document).scrollTop() < 3490) {
+    element.classList.remove("top-button-moved");
+    element.classList.add("top-button");
   }
+  
 };
+
+
+
 
 /*
 document.getElementById('top').onscroll = function() {
