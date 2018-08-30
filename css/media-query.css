@@ -18,7 +18,7 @@
 /*----- 2-Column Sub-Section -----*/
   
   .content-row2-col {
-    max-width: 455px;
+    width: 455px;
   } 
 
   .content-row2c {
@@ -106,7 +106,7 @@
 /*----- 2-Column Sub-Section -----*/  
 
   .content-row2-col {
-    max-width: 345px;
+    width: 345px;
   } 
 
   .content-row2c {
@@ -126,9 +126,9 @@
     display: flex;
     flex-wrap:wrap;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 0 0 0 0;
-    padding: 0 0 0px 0px;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
   }
 
   .services-row1 > div {
@@ -178,8 +178,25 @@
 
 
 
-/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----- Start 767px Media Query Section -----*/
 @media screen and (max-width: 767px) {
+  
+/*----- Nav Section -----*/
   nav {
     background-color: transparent;
   }
@@ -193,13 +210,16 @@
     display: block;
     width: 44px;
     height: 24px;
-    margin: -15px 14px 0 0;
+    margin: -15px 12px 0 0;
     padding: 8px 0 2px 0 ;
     color: #fff;
     background-color: #000;
     border-radius: 5px;
   }
 
+/*----- End Nav Section -----*/
+/*----- Start First Parallax Section -----*/ 
+  
   .bg1 {
     height:706px;
   }
@@ -207,150 +227,187 @@
   .txt {
     padding: 290px 0 0 0;
   }
-  
 
-  .container1 {
-    width: 640px;
-    margin: 0 auto;
+/*----- End First Parallax Section -----*/ 
+/*----- 3-Column Sub-Section -----*/
+
+  .content-container {
+    max-width: 640px;
   }
 
-  .row1 {
+  .content-row1 {
     display: flex;
     flex-wrap:wrap;
-    flex-direction: row;
-    margin: 70px 0px 0px 0px;
-    padding: 0 140px 0 140px ;
   }
 
-  .col1 {
-    width: 360px;
+  .content-row1-col {
+    width: 362px;
   }
 
-  .col1-1, .col1-2 {
-    margin: 0 0px 30px 0;
+  .content-row1-col1, .content-row1-col2, .content-row1-col3 {
+    margin: 0 auto 30px auto;
   }
 
-  .row1-2 {
+  .content-row1b {
     text-align: center;
     padding: 0 25px;
   }
   
-  .img1 {
-    width: 360px;
-  }
+/*----- End 3-Column Sub-Section -----*/
+/*----- 2-Column Sub-Section -----*/
   
-  .row2 {
+   .content-row2 {
     display: flex;
     flex-wrap:wrap;
-    flex-direction: row;
-    margin: 80px 0px 0px 0px;
-    padding: 0 42px 0 42px ;
+    width: 94%;
+    margin: 0 3%;
   }
   
-  .col2 {
-    width: 556px;
-  } 
-  
-  .col2-1, .col2-2 {
-    margin: 0 0px 30px 0;
+  .content-row2-col {
+    width: 100%;
+    max-width: 554px;
   }
   
-  .row2-2 {
+  .content-row2-col1, .content-row2-col2 {
+    margin: 0 auto 30px auto;
+    padding: 0 0 42px 0;
+  }
+  
+  .content-row2b {
     text-align: center;
   }
 
-  .img2 {
-    width: 556px;
-  }
+  .content-row2c {
+    float: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
   
-  .row2-3 {
-    padding: 5px 201px 0 201px;
-    margin: -12px 0 0 0;
+  .white-button {
   }
- 
+/*----- End 2-Column Sub-Section -----*/
+/*----- Second Parallax Section -----*/
+  
   .bg2 {
     background-attachment: fixed;
     width:100%;
-    height:320px;
+    height:321px;
     background-position: 0px 0px;
     background-size:cover;
   }
   
-  .secondary-txt {
+  .parallax-txt2 {
     width: 94%;
     padding: 40px 0 0 0;
-
   }
   
-  .sub-second-text {
+  .sub-text2 {
     padding: 10px 0 0 0;
     font-size: 1.12rem;
-    line-height: 27px;
+    line-height: 28px;
+    word-spacing: 2px;
+  }
+
+/*----- End Second Parallax Section -----*/
+/*----- 4-Column Sub-Section -----*/
+  
+  .services-container {
+    max-width: 718px;
   }
   
-  .container2 {
-    width: 100%;
-    margin: 0 auto;
+  .services-row1 {
+    display: inline-flex;
+    justify-content:space-around;
+    padding: 0 0 30px 0;
+    width: 94%;
+    margin: 0 3%;
   }
   
-  .row3 {
-  display: inline-flex;
-  padding: 0 0 30px 0;
-}
+  .services-row1-col { 
+    max-width: 258px;
+    min-width: 226px;
+  }
+
+  .services-row1-col1, .services-row1-col2 {
+    margin-bottom: 30px;
+  }
 
 
-  .col3 { 
-    max-width: 260px;
+/*----- End 4-Column Sub-Section -----*/
+/*----- 1-Column Sub-Section -----*/
+ 
+  .services-row2 {
+    width: 94%;
+    margin: 0 3%;
   }
   
-  .col4 {
-    max-width: 87%;
+  .services-row2-col {
+    max-width: 100%;
     margin: 0 auto;
+    height: 100%;
   }
   
-  .row1-1 {
+  .services-row2-col1 div.services-row2b {
+    padding: 30px 35px 0 25px;
+  }
+  
+  .services-row2a {
     max-width: 100%;
   }
-  
-  .img4-5 {
-    max-width: 60%;
-    height: auto;
+
+  .services-row2b {
+     padding: 20px;
   }
+  
+  .services-text2 {
+    word-spacing: 2px;
+  }
+  
+  .services-white-button2 {
+    margin: 30px 0 30px 25px;
+  }
+
+/*----- End 1-Column Sub-Section -----*/
+/*----- Third Parallax Section -----*/  
+  
   
   .bg3 {
     height: 726px;
+    background-position: -115px 0px;
   }
   
   .contact-form {
-    width:90%;  
+    width:94%;  
+    height: 100%;
+    padding: 0px 0 0px 0;
   }
   
   .form-row1 {
-    margin: 0 auto;
-    padding: 5px 40px;
+    padding: 5px 20px;
   }
   
-  .sub-third-text {
+  .form-text {
     text-align: center;
     line-height: 25px;
     font-size: 1rem;
   }
   
   .form-row2 {
-    margin: 0 10px;
+    margin: 12px 0 0 0 ;
     display: block;
   }
 
-  .form-row2-col2 {
-    width: 100%;
-  }
-  
   .form-row2-col1 {
     width: 100%;
   }
   
   .form-input {
     width: 97%;
+  }
+  
+  .form-row2-col2 {
+    width: 100%;
   }
   
   .text-area {
@@ -360,10 +417,13 @@
   
   .form-row3-col1 {
     float: left;
-    padding: 13px 0px 0 10px;
+    padding: 13px 0px 0 0px;
   }
-  
-  .row5 {
+
+/*----- End Third Parallax Section -----*/ 
+/*----- Tail Section -----*/ 
+
+  .tail-row1 {
     margin: 38px auto 48px auto;
     width: 70%;
     text-align: center;
@@ -376,5 +436,195 @@
     color: #a0a0a0;
     line-height: 22px;
   }
-  */
+
+/*----- End Tail Section -----*/ 
 }
+/*----- End 767px Media Query Section -----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----- Start 520px Media Query Section -----*/
+@media screen and (max-width: 520px) {
+/*----- 4-Column Sub-Section -----*/  
+.services-container {
+    max-width: 718px;
+  }
+  
+  .services-row1 {
+    display: inline-flex;
+    justify-content:space-around;
+    padding: 0 0 30px 0;
+    width: 96%;
+    margin: 0 2%;
+  }
+  
+  .services-row1 > div {
+    flex-basis: calc(100% - 70px);  
+  }
+  
+  .services-row1-col { 
+    width: 100%;
+  }
+  
+  .services-row1-col1, .services-row1-col2, .services-row1-col3, .services-row1-col4 {
+    margin: 0 20px;
+  }
+  
+  .services-row1-col1, .services-row1-col2, .services-row1-col3 {
+    margin-bottom: 30px;
+  }
+/*----- End 4-Column Sub-Section -----*/  
+}
+/*----- End 520px Media Query Section -----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----- Start 480px Media Query Section -----*/
+@media screen and (max-width: 480px) {
+
+/*----- Start First Parallax Section -----*/ 
+  
+  .bg1 {
+    height:470px;
+  }
+  
+  .parallax-txt1 {
+    padding: 180px 0 0 0;
+  }
+  
+  .title-text1 {
+    font-size: 3.25rem;
+    font-weight:400;
+    text-shadow: 2px 2px #000;
+  }
+
+  .sub-text1 {
+    padding: 10px 0 0 0;
+    text-shadow: 0px 1px #000;
+    font-weight:400;
+    font-size: 1.55rem;
+  }
+
+/*----- End First Parallax Section -----*/ 
+/*----- Start Second Parallax Section -----*/
+
+  .bg2 {
+    height:378px;
+  }
+  
+  .parallax-txt2 {
+    width: 94%;
+    padding: 40px 0 0 0;
+  }
+  
+  .sub-text2 {
+    padding: 10px 0 0 0;
+    font-size: 1.12rem;
+    line-height: 28px;
+    word-spacing: 2px;
+  }
+
+/*----- End Second Parallax Section -----*/ 
+/*----- Start Third Parallax Section -----*/
+  .bg3 {
+    height: 800px;
+    background-position: -115px 0px;
+  }
+  
+  .title-text3 {
+    width: 58%;
+    }
+  
+  .contact-form {
+    width:94%;  
+    padding: 0px 0 0px 0;
+  }
+  
+  .form-row1 {
+    margin: 0 auto;
+    padding: 5px 20px;
+  }
+  
+  .form-text {
+    text-align: center;
+    line-height: 25px;
+    font-size: 1rem;
+  }
+  
+  .form-row2 {
+    width: 100%;
+    margin: 12px 0 0 0 ;
+    display: block;
+  }
+
+  .form-row2-col1 {
+    width: 100%;
+  }
+  
+  .form-input {
+    width: 94%;
+  }
+  
+  .form-row2-col2 {
+    width: 100%;
+  }
+  
+  .text-area {
+  float:left;
+  width: 94%;
+  }
+  
+  .form-row3-col1 {
+    float: left;
+    padding: 13px 0px 0 0px;
+  }
+/*----- End Third Parallax Section -----*/
+/*----- Tail Section -----*/ 
+
+  .tail-row1 {
+    margin: 38px auto 48px auto;
+    width: 90%;
+    text-align: center;
+  }
+
+/*----- End Tail Section -----*/ 
+/*----- Footer Section -----*/ 
+  .footer-row1 {
+    margin: 25px auto;
+    width: 100%;
+  }
+/*----- End Footer Section -----*/ 
+}
+/*----- End 480px Media Query Section -----*/
+  
