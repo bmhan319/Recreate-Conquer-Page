@@ -35,3 +35,20 @@ nav {
 .topnav .icon {
   display: none;
 }
+/* -------End Nav Bar------- */
+/* -------Top Button------- */
+
+.top-button {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  opacity: 0;
+}
+
+
+.top-button-moved {
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+}
+/* -------End Top Button------- */

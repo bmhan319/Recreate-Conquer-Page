@@ -47,3 +47,29 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+
+//Top Button 
+//Top Button appears on scroll
+
+
+document.getElementById('top').onscroll = function() {
+  if ($(document).scrollTop() >= 300) {
+    $('#top-button').stop().animate({opacity:1}, 500, 'linear');
+  } else if ($(document).scrollTop() < 300) {
+    $('#top-button').stop().animate({opacity:0}, 500, 'linear');
+  }
+};
+
+/*
+document.getElementById('top').onscroll = function() {
+  let topButton = document.getElementById('top-button');
+  if ($(document).scrollTop() >= 300) {
+    $(topButton).animate({'opacity':'1'}, 150, 'linear');
+  } else if ($(document).scrollTop() < 300) {
+    $(topButton).animate({'opacity':'0'}, 150, 'linear');
+  }
+};
+*/
+//Top Button moves position when scrollbar gets to the bottom
+
