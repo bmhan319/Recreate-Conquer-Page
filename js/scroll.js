@@ -40,14 +40,6 @@ for (var i = 0; i < btns.length; i++) {
 
 
 
-function myFunction() {
-    var navigation = document.getElementById("navbar");
-    if (navigation.className === "topnav") {
-        navigation.className += " responsive";
-    } else {
-        navigation.className = "topnav";
-    }
-}
 
 
 //Top Button 
@@ -74,17 +66,5 @@ document.getElementById('top').onscroll = function() {
 };
 
 
-
-
-/*
-document.getElementById('top').onscroll = function() {
-  let topButton = document.getElementById('top-button');
-  if ($(document).scrollTop() >= 300) {
-    $(topButton).animate({'opacity':'1'}, 150, 'linear');
-  } else if ($(document).scrollTop() < 300) {
-    $(topButton).animate({'opacity':'0'}, 150, 'linear');
-  }
-};
-*/
 
 
