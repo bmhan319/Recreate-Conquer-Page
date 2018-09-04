@@ -41,8 +41,6 @@ for (var i = 0; i < btns.length; i++) {
 
 
 
-
-//Top Button 
 //Top Button appears on scroll down
 document.getElementById('top').onscroll = function() {
   if ($(document).scrollTop() >= 300) {
@@ -55,14 +53,13 @@ document.getElementById('top').onscroll = function() {
   
   //Top Button moves position when scrollbar gets to the bottom
   var element = document.getElementById("top-button");
-  if ($(document).scrollTop() >= 3490) {
+  if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
     element.classList.remove("top-button");
     element.classList.add("top-button-moved");
-  } else if ($(document).scrollTop() < 3490) {
+  } else if ((window.innerHeight + window.scrollY) < document.body.scrollHeight) {
     element.classList.remove("top-button-moved");
     element.classList.add("top-button");
   }
-  
 };
 
 

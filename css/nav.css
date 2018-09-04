@@ -49,14 +49,13 @@ nav {
 .top-button-moved {
   position: fixed;
   right: 20px;
-  bottom: 80px;
+  bottom: 78px;
 }
 /* -------End Top Button------- */
 
 
 
-/* -------Hamburger Menu------- */
-
+/* -------Unused Hamburger Menu------- */
 .navigation {
   float: right;
   margin: -16px 16px 0 0;
@@ -76,5 +75,12 @@ nav {
   border-radius:15%;
   transition: all .3s;
 }
-
+/* -------End Unused Hamburger Menu------- */
+/* -------Hamburger Menu------- */
+.header {
+  display: none;
+}
 /* -------End Hamburger Menu------- */
+
+
+
